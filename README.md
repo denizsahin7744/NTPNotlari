@@ -57,3 +57,34 @@ if(cd.ShowDialog() == DialogResult.OK){
 	txtEditor.SelectionColor = cd.Font;
 }
 ```
+
+## MessageBox Buton Kontrolleri
+```
+DialogResult cevap = MessageBox.Show("İşlem Yapılsınmı","Uygulama",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+if(cevap == DialogResult.Yes){
+	//Yapılacak İşlem
+}
+else if (cevap== DialogResult.No){
+	//İşlemin İptal Durumu
+}
+```
+
+## Dizi Oluşturma
+```
+string[] yazilar = new string[x]; // x = dizi uzunluğu
+string[,] yazilar2 = new string[x,y]; // x = dizi uzunluğu, y = satır adeti
+
+int[] double = new int[x]; // x = dizi uzunluğu
+int[,] double2 = new int[x,y]; // x = dizi uzunluğu, y = satır adeti
+```
+
+## Sayıya Dönüştürme
+```
+Convert.ToInt32(<Dönüşücek Değer>); 
+int.Parse(<Dönüşücek Değer>);
+```
+
+## Yazıya Dönüştürme
+```
+<Dönüşücek Değer>.ToString();
+```
